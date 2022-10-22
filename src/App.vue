@@ -1,31 +1,55 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Button from "../src/components/Button/Button.vue"
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="included">
+
+    <div class="finish" id="finish"></div>
+    
+    <img id="atbir" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <hr />
+    <img id="atiki" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <hr />
+    <img id="atuc" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <hr />
+    <img id="atdort" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <hr />
+    <img id="atbes" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <hr />
+    <img id="atalti" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <hr />
+    <img id="atyedi" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <hr />
+    <img id="atsekiz" src="../src/assets/img/att.gif" width="50px" height="50px" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <br />
+  <br />
+  <Button></Button>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.included {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: olivedrab;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.button {
+  width: 90px;
+  height: 60px;
+  background-color:olivedrab;
+  flex: content;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.finish {
+  width: 10px;
+  height: 558px;
+  position: relative;
+  float: right;
+  background-color: black;
+  margin-right: 10px;
 }
+
+
 </style>
