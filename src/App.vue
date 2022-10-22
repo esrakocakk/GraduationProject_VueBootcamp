@@ -26,6 +26,7 @@ import Button from "../src/components/Button/Button.vue"
   <br />
   <br />
   <Button></Button>
+
 </template>
 
 <style scoped>

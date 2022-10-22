@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<button class="button" @click="atbir">Yarışı Başlat</button>
+<center><button class="button" @click="atbir">Yarışı Başlat</button></center>
 </template>
 
 <style >
@@ -13,5 +13,6 @@
   height: 55px;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
+  background-color: olivedrab;
 }
 </style>
