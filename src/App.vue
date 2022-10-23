@@ -1,32 +1,19 @@
 <script setup>
-import Button from "../src/components/Button/Button.vue"
+import Horses from "./components/Horses/Horses.vue";
+import StartButton from "./components/Button/StartButton.vue";
+import AgainButton from "./components/Button/AgainButton.vue";
 </script>
 
 <template>
   <div class="included">
-
     <div class="finish" id="finish"></div>
-    
-    <img id="atbir" src="../src/assets/img/att.gif" width="50px" height="50px" />
-    <hr />
-    <img id="atiki" src="../src/assets/img/att.gif" width="50px" height="50px" />
-    <hr />
-    <img id="atuc" src="../src/assets/img/att.gif" width="50px" height="50px" />
-    <hr />
-    <img id="atdort" src="../src/assets/img/att.gif" width="50px" height="50px" />
-    <hr />
-    <img id="atbes" src="../src/assets/img/att.gif" width="50px" height="50px" />
-    <hr />
-    <img id="atalti" src="../src/assets/img/att.gif" width="50px" height="50px" />
-    <hr />
-    <img id="atyedi" src="../src/assets/img/att.gif" width="50px" height="50px" />
-    <hr />
-    <img id="atsekiz" src="../src/assets/img/att.gif" width="50px" height="50px" />
+    <Horses></Horses>
   </div>
   <br />
   <br />
-  <Button></Button>
+  <StartButton></StartButton>
 
+  <AgainButton></AgainButton>
 </template>
 
 <style scoped>
@@ -37,12 +24,6 @@ import Button from "../src/components/Button/Button.vue"
   background-color: olivedrab;
 }
 
-.button {
-  width: 90px;
-  height: 60px;
-  background-color:olivedrab;
-  flex: content;
-}
 .finish {
   width: 10px;
   height: 558px;
@@ -51,6 +32,4 @@ import Button from "../src/components/Button/Button.vue"
   background-color: black;
   margin-right: 10px;
 }
-
-
 </style>
