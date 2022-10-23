@@ -1,22 +1,26 @@
-<script>
+<script setup>
+import { ref } from 'vue';
+import Countdown from '../Countdown/Countdown.vue';
+
+const showModal=ref(false);
 
 </script>
 
 <template>
-<center><button class="button" @click="atbir">Yarışı Başlat</button></center>
+  <Countdown></Countdown>
+  <center>
+    <button @click="showModal = true">show</button>
+    <button class="button" @click="showModal=true">Yarışı Başlat</button>
+  </center>
 </template>
 
-<style >
-
+<style>
 .button {
-  margin-top: 20px;
-  margin-right: 200px;
-  float: left;
+  margin: 20px;
   width: 150px;
   height: 55px;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  background-color:olivedrab;
- 
+  background-color: olivedrab;
 }
 </style>
