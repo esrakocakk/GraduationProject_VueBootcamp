@@ -1,16 +1,9 @@
 <script setup>
 import Horses from "./components/Horses/Horses.vue";
-
 </script>
 
 <template>
-    <Horses></Horses>
-  <br />
-  <br />
-
-
+  <Horses></Horses>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
