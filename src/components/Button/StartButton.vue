@@ -21,7 +21,8 @@ function openModal() {
   margin-left: 500px;
   width: 220px;
   height: 65px;
-
+  background-color: olivedrab;
+  border: none;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }

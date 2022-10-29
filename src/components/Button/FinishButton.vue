@@ -23,7 +23,8 @@ function openModal() {
   margin-right: 10px;
   width: 60px;
   height: 30px;
-
+  background-color: white;
+  border: none;
   font-family: "Times New Roman", Times, serif;
   font-size: 12px;
 }
