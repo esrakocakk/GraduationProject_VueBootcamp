@@ -1,5 +1,9 @@
 <script setup>
-import CountDownModal from '../Countdown/CountDownModal.vue';
+import { ref } from "vue";
+import CountDownModal from "../Countdown/CountDownModal.vue";
+
+const isShowModal = ref(false);
+
 
 function openModal() {
   this.isShowModal = true;
@@ -7,18 +11,19 @@ function openModal() {
 </script>
 
 <template>
+  <CountDownModal v-if="isShowModal" ></CountDownModal>
 
-  <button class="button" @click="openModal()" >Yarışı Başlat</button> <!--Oyun başlangıcında geri sayım modalının da aktif eder-->
-  <CountDownModal></CountDownModal>
+  <!--Oyun başlangıcında geri sayım modalının da aktif eder-->
+  <button class="startButton" @click="openModal()">Yarışı Başlat</button>
 </template>
 
 <style>
-.button {
-  margin: 20px;
-  margin-left: 300px;
+.startButton {
+  margin-top: 45px;
+  margin-left: 500px;
   width: 220px;
   height: 65px;
-  background-color: olivedrab;
+
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }

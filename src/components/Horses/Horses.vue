@@ -1,74 +1,48 @@
 <script setup>
-import StartButton from "../Button/StartButton.vue";
-
-
+import FinishButton from '../Button/FinishButton.vue';
 const min = 20;
 const max = 40;
 
+//atların random seçilmesi için oluşturulan data
 const horsesData = [
   {
     id: "atbir",
     position: 5 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
   {
     id: "atiki",
     position: 10 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
   {
     id: "atuc",
     position: 15 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
   {
     id: "atdort",
     position: 20 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
   {
     id: "atbes",
     position: 25 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
   {
     id: "atalti",
     position: 30 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
   {
     id: "atyedi",
     position: 35 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
   {
     id: "atsekiz",
     position: 40 + "px",
-    image: {
-      url: "../img/att.gif",
-    },
   },
 ];
 
+//ile atlardan bir tanesi random olarak seçilmekte
 const horseData = horsesData[Math.floor(Math.random() * horsesData.length)];
 
-function horse() {
-
-}
+function horse() {}
 
 console.log(horseData);
 
@@ -77,18 +51,17 @@ function Start() {
   return;
 }
 
+// position fonksiyonu ile atların hızları 20 ile 40 sayıalrı arasından bir değer alacak şekilde belirleniyor
 function position() {
   speed = Math.floor(Math.random() * (max - min + 1)) + min;
   return;
 }
-
-console.log(horsesData);
 </script>
 
 <template>
   <div class="included">
     <div class="finish"></div>
-   
+
     <!--Horse Datadan gelen random atlar vfor aracılığıyla ekrana yansıtılıyor ve hareket işlemleri gerçekleşiyor -->
     <img
       class="image"
@@ -96,8 +69,8 @@ console.log(horsesData);
       src="../img/att.gif"
       :class="`margin-left:${horsesData.position}px`"
     />
+    <FinishButton></FinishButton>
   </div>
-  <StartButton ></StartButton>
   
 </template>
 
@@ -135,5 +108,4 @@ console.log(horsesData);
   background-color: black;
   margin-right: 10px;
 }
-
 </style>

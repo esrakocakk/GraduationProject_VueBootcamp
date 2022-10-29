@@ -13,10 +13,10 @@ import Horses from '../Horses/Horses.vue';
 </template>
 <style scoped>
 .Leader-table {
-  margin: -85px;
+  margin: -68px;
   width: 220px;
   height: 68px;
-  margin-left: 600px;
+  margin-left: 800px;
   border: 3px solid olive;
   text-align: center;
 }

@@ -1,12 +1,18 @@
 <script setup>
+import {ref} from "vue"
 import ResultTable from "./ResultTable.vue"
+const closed = ref(true);
+
+function close() {
+  setTimeout(() => {this.closed = false;}, 10);
+}
 </script>
 
 <template>
-  <div class="modal-mask">
+  <div class="modal-mask" v-if="closed">
     <div class="modal-container">
       <div class="modal-wrapper">
-        <button class="modal-button" @click="close">X</button>
+        <button class="modal-button" @click="close()">X</button>
         <div class="modal-body">
           <ResultTable></ResultTable>
         </div>
@@ -21,7 +27,7 @@ import ResultTable from "./ResultTable.vue"
   margin: 200px;
   margin-left: 600px;
   width: 300px;
-  height: 200px;
+  height: 300px;
   padding: 20px 30px;
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
@@ -47,12 +53,13 @@ import ResultTable from "./ResultTable.vue"
 }
 
 .modal-body {
-  margin: 0px ;
+  margin: 20px 0 ;
+  margin-inline-start: auto;
 }
 
 .modal-button {
-  margin: 10px;
-  margin-left: 10px;
+  margin: 0px;
+  margin-right: 10px;
   float: right;
   width: 20px;
   height: 20px;

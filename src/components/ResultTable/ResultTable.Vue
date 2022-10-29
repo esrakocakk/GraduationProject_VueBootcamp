@@ -35,10 +35,10 @@ import Horses from "../Horses/Horses.vue";
 </template>
 <style scoped>
 .result_table{
-    margin: 50px;
-  width: 250px;
-  height: 50px;
-  margin-left: 600px;
+  margin-top: 50px;
+  margin-right: 30px;
+  width: 280px;
+  height: 100px;
   border: 3px solid olive;
   text-align: center;
 }

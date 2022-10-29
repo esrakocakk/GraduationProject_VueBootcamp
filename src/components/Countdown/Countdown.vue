@@ -1,29 +1,27 @@
 <script setup>
 function startTimer(duration, display) {
-  var timer = duration,
-    seconds;
-  setInterval(function () {
-    seconds = parseInt(timer % 10, 10);
+    var timer = duration, seconds;
+    setInterval(function () {
+        seconds = parseInt(timer % 5 );
+        seconds = seconds < 6 ? seconds : seconds;
 
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = seconds;
 
-    display.textContent = seconds;
-
-    if (--timer < 0) {
-      timer = duration;
-    }
-  }, 1000);
+        if (--timer <= 0) {
+            timer = duration;
+        }
+    }, 1000);
 }
 
 window.onload = function () {
-  var tenSecond = 60 * 5,
-    display = document.querySelector("#time");
-  startTimer(tenSecond, display);
+    var fiveSeconds = 60 * 1,
+        display = document.querySelector('#time');
+    startTimer(fiveSeconds, display);
 };
 </script>
 
 <template>
-  <div class="time"><span id="time">10</span><br> Saniye!</div>
+ <div class="time"><span id="time">5</span> Saniye!</div>
 </template>
 
 <style scoped>

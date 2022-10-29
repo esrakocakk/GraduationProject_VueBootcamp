@@ -1,18 +1,20 @@
 <script setup>
+import { ref } from "vue";
 import Countdown from "./Countdown.vue";
 
-const isShowModal = false;
+const closed = ref(true);
 
-
+function close() {
+  setTimeout(() => {this.closed = false;}, 10);
+}
 </script>
 
 <template>
-
-  <div class="modal-mask" v-if="isShowModal">
+  <div class="modal-mask" v-if="closed">
     <div class="modal-container">
       <div class="modal-wrapper">
-        <button class="modal-button">X</button>
         <div class="modal-header">Oyunun Başlamasına</div>
+        <button class="modal-button"  @click="close()">X</button>
         <div class="modal-body">
           <Countdown></Countdown>
         </div>
@@ -66,8 +68,8 @@ const isShowModal = false;
 }
 
 .modal-button {
-  margin: -10px;
-  margin-left: 300px;
+  margin: -50px;
+  margin-left: 270px;
   float: right;
   width: 20px;
   height: 20px;
