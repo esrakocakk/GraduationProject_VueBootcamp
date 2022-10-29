@@ -4,17 +4,15 @@ import CountDownModal from "../Countdown/CountDownModal.vue";
 
 const isShowModal = ref(false);
 
-
 function openModal() {
   this.isShowModal = true;
 }
 </script>
 
 <template>
-  <CountDownModal v-if="isShowModal" ></CountDownModal>
-
   <!--Oyun başlangıcında geri sayım modalının da aktif eder-->
   <button class="startButton" @click="openModal()">Yarışı Başlat</button>
+  <CountDownModal v-if="isShowModal"></CountDownModal>
 </template>
 
 <style>

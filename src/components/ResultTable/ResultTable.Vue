@@ -2,7 +2,7 @@
 import Horses from "../Horses/Horses.vue";
 </script>
 <template>
-  <table class="result_table" border="9" >
+  <table class="result_table" border="9" > <!--horses componentsinden gelen sonuçlar ekrana yazıdırılır-->
     <tr>
       <th>Yarışın Sonucu</th>
     </tr>
@@ -36,7 +36,7 @@ import Horses from "../Horses/Horses.vue";
 <style scoped>
 .result_table{
   margin-top: 50px;
-  margin-right: 30px;
+  margin-right: 50px;
   width: 280px;
   height: 100px;
   border: 3px solid olive;
