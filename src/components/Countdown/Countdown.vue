@@ -16,14 +16,14 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-  var fiveMinutes = 60 * 5,
+  var fiveSeconds = 60 * 5,
     display = document.querySelector("#time");
-  startTimer(fiveMinutes, display);
+  startTimer(fiveSeconds, display);
 };
 </script>
 
 <template>
-  <div class="time"><span id="time">05:00</span> minutes!</div>
+  <div class="time"><span id="time">5</span> Saniye!</div>
 </template>
 
 <style scoped>
