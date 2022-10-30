@@ -1,8 +1,37 @@
-# Vue 3 + Vite
+# GraduationProject_VueBootcamp
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+224. Protein Vue.js is the graduation project of Bootcamp. Our aim is to make a horse racing game.
+
+![projectPNG](https://github.com/esrakocakk/GraduationProject_VueBootcamp/blob/e4423d1ca2a84c1f674a8eb1d1a55f9483c01947/src/assets/atyarisi.PNG)
+
+#### [Demo]()
+
+## Getting Started
+
+To get started you can simply clone this `vue-dashboard-team-earth-1` repository and install the dependencies.
+
+Clone the `GranduationProject_VueBootcamp` repository using git:
+
+```bash
+git clone https://github.com/esrakocakk/GraduationProject_VueBootcamp.git
+```
+
+Install dependencies with this command:
+
+```bash
+npm install
+```
+
+Run the application with this command:
+
+```bash
+npm run dev
+```
 
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-# GraduationProject_VueBootcamp
+
+### Build With:
+
+- [Vue.js](https://vuejs.org/)
